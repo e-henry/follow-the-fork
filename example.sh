@@ -21,6 +21,21 @@ usage() {
   echo ""
 }
 
+say() {
+  echo "$BOLD$STANDARD$*$NORMAL"
+}
+
+error() {
+  echo "$BOLD$RED$*$NORMAL"
+}
+
+success() {
+  echo "$BOLD$GREEN$*$NORMAL"
+}
+
+warning() {
+  echo "$BOLD$YELLOW$*$NORMAL"
+}
 if [ $# != 1 ]; then
   usage
   exit 1
@@ -35,3 +50,7 @@ echo "${STANDARD}This is the content of the first argument ${NORMAL}: $1"
 
 echo "${STANDARD}This is the content of my_var ${NORMAL}: $my_var"
 
+say il va y avoir une erreur : 
+error La voici
+warning Attention !
+success Mais tout est OK
