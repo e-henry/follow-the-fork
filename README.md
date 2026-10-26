@@ -34,3 +34,7 @@ BOLD=$(tput bold)
 For more information:
   https://www.shellcheck.net/wiki/SC2034 -- BOLD appears unused. Verify use (...
 ```
+
+## Schema :
+
+![Upstream](./Contribution-Git-upstream.svg)
